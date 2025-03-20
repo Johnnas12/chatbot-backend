@@ -10,7 +10,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 def chat_with_gemini(message: str):
     try:
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-1.5-pro-002")
         response = model.generate_content(message)
         return response.text
     except Exception as e:
